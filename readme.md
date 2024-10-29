@@ -61,14 +61,14 @@ On OSX you can install latest 2.6 version with `brew install tmux`. On Linux it'
 
 To install tmux-config:
 ```
-$ git clone https://github.com/samoshkin/tmux-config.git
+$ git clone https://github.com/p4p4j0hn/tmux-config.git
 $ ./tmux-config/install.sh
 ```
 
 `install.sh` script does following:
-- copies files to `~/.tmux` directory
-- symlink tmux config file at `~/.tmux.conf`, existing `~/.tmux.conf` will be backed up
-- [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) will be installed at default location `~/.tmux/plugins/tpm`, unless already presemt
+- copies files to `~/.config/tmux` directory
+- existing `~/.tmux.conf` will be backed up
+- [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) will be installed at `~/.config/tmux/plugins/tpm`, unless already presemt
 - required tmux plugins will be installed
 
 Finally, you can jump into a new tmux session:
@@ -97,7 +97,7 @@ screen-256color
 
 Key bindings
 -----------
-So `~/.tmux.conf` overrides default key bindings for many action, to make them more reasonable, easy to recall and comforable to type.
+So `~/.config/tmux/tmux.conf` overrides default key bindings for many action, to make them more reasonable, easy to recall and comforable to type.
 
 Let's go through them. 
 
