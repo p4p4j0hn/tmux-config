@@ -35,7 +35,6 @@ elif [[ -e "$HOME/.config/tmux/tmux.conf" ]]; then
 fi
 
 cp -a ./tmux/. "$HOME"/.config/tmux/
-ln -sf .config/tmux/tmux.conf "$HOME"/.tmux.conf
 
 # Install TPM plugins.
 # TPM requires running tmux server, as soon as `tmux start-server` does not work
